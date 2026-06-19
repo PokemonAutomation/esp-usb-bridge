@@ -1,4 +1,17 @@
-# ESP USB Bridge
+# ESP USB Bridge (for Xiao ESP32-S3)
+
+This fork is aimed at the SeeedStudio Xiao ESP32-S3.
+
+| Xiao ESP32-S3 Pin | Target ESP32 | Target ESP32-S3 |
+|---|---|---|
+| D3 / GP4 (TMS) | GP14 (MTMS) | GP42 (MTMS) |
+| D4 / GP5 (TCK) | GP13 (MTCK) | GP39 (MTCK) |
+| D5 / GP6 (TDO) | GP15 (MTDO) | GP40 (MTDO) |
+| D8 / GP7 (TDI) | GP12 (MTDI) | GP41 (MTDI) |
+| D9 / GP8 (UART TX) | UART RX | UART RX |
+| D10 / GP9 (UART RX) | UART RX | UART TX |
+
+--------
 
 The ESP USB Bridge is an [ESP-IDF](https://github.com/espressif/esp-idf) project utilizing an ESP32-S2 or an ESP32-S3 chip to create a bridge between a computer (PC) and a target microcontroller (MCU). It can serve as a replacement for USB-to-UART chips (e.g. CP210x) or a debugger.
 
