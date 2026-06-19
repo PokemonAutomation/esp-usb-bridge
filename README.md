@@ -9,7 +9,7 @@ This fork is aimed at the SeeedStudio Xiao ESP32-S3.
 | D5 / GP6 (TDO) | GP15 (MTDO) | GP40 (MTDO) |
 | D8 / GP7 (TDI) | GP12 (MTDI) | GP41 (MTDI) |
 | D9 / GP8 (UART TX) | UART RX | UART RX |
-| D10 / GP9 (UART RX) | UART RX | UART TX |
+| D10 / GP9 (UART RX) | UART TX | UART TX |
 
 --------
 
