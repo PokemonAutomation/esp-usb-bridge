@@ -25,7 +25,7 @@
 
 static const char *TAG = "bridge_main";
 
-#define TUSB_DESC_TOTAL_LEN (TUD_CONFIG_DESC_LEN + TUD_CDC_DESC_LEN + TUD_VENDOR_DESC_LEN + TUD_MSC_DESC_LEN)
+#define TUSB_DESC_TOTAL_LEN (TUD_CONFIG_DESC_LEN + TUD_CDC_DESC_LEN + TUD_VENDOR_DESC_LEN + TUD_MSC_DESC_LEN*0)
 
 static const tusb_desc_device_t descriptor_config = {
     .bLength = sizeof(descriptor_config),
@@ -74,7 +74,7 @@ static uint8_t const desc_configuration[] = {
     TUD_VENDOR_EUB_DESCRIPTOR(ITF_NUM_VENDOR, EUB_VENDORD_IFACE_STR_IDX, EPNUM_VENDOR, 0x80 | EPNUM_VENDOR, 64),
 
     // Interface number, string index, EP Out & EP In address, EP size
-    TUD_MSC_DESCRIPTOR(ITF_NUM_MSC, 6, EPNUM_MSC, 0x80 | EPNUM_MSC, 64),
+//    TUD_MSC_DESCRIPTOR(ITF_NUM_MSC, 6, EPNUM_MSC, 0x80 | EPNUM_MSC, 64),
 };
 
 #define MAC_BYTES       6

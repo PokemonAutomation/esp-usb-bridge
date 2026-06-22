@@ -4,12 +4,17 @@ This fork is aimed at the SeeedStudio Xiao ESP32-S3.
 
 | Xiao ESP32-S3 Pin | Target ESP32 | Target ESP32-S3 |
 |---|---|---|
+| D1 / GP2 | EN (Reset) | EN (Reset) |
+| D2 / GP3 | GP0 (Bootsel) | GP0 (Bootsel) |
 | D3 / GP4 (TMS) | GP14 (MTMS) | GP42 (MTMS) |
 | D4 / GP5 (TCK) | GP13 (MTCK) | GP39 (MTCK) |
 | D5 / GP6 (TDO) | GP15 (MTDO) | GP40 (MTDO) |
 | D8 / GP7 (TDI) | GP12 (MTDI) | GP41 (MTDI) |
 | D6 / GP43 (UART TX) | UART RX | UART RX |
 | D7 / GP44 (UART RX) | UART TX | UART TX |
+
+
+Note that The MSD has been disabled, though it can be trivially turned back on.
 
 --------
 
